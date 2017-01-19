@@ -1,0 +1,21 @@
+{% extends "header.html" %}
+{% block content %}
+<div class='container'>
+  <div class='row'>
+    <form id='contact-form'>
+      <div class='form-group'>
+        <input type='text' name='name' class='form-control' placeholder='Your full name' label='Your full name'>
+      </div>
+      <div class='form-group'>
+        <input type='email' name='email' class='form-control' placeholder='Your email address'>
+      </div>
+      <div class='form-group'>
+        <input type='text' name='subject' class='form-control' placeholder='Subject of your inquiry'>
+      </div>
+      <div class='form-group'>
+        <textarea class='form-control' placeholder='Your message'></textarea>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

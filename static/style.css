@@ -31,6 +31,38 @@
 	margin-top: 20px;
 }
 
+.boarding-banner {
+	margin-top: 30px;
+	width: 70%;
+	height: auto;
+}
+
+.thumbnail-box {
+	margin-top: 15px;
+}
+
+.img-thumbnail {
+	margin-bottom: 20px;
+
+}
+
+/*Instructor page*/
+
+.instructor-photo {
+	height: 380px;
+	width: auto;
+}
+
+.instructor-bio {
+	font-size: 13pt;
+	line-height: 18pt;
+}
+
+.panel-body {
+	padding: 34px;
+}
+
+
 @media screen and (max-width: 1120px) {
 	.navbar-nav {
 		font-size: 14px;

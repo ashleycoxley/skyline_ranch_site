@@ -1,0 +1,76 @@
+{% extends "header.html" %}
+{% block content %}
+<div class='container'>
+  <div class='row'>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class='row'>
+          <div class='col-md-4'>
+            <img class='instructor-photo' src='https://placekitten.com/g/300/372'>
+          </div>
+          <div class='col-md-8 instructor-bio pull-left'>
+            <h2>Judi Martin</h2>
+            <div class='instructor-bio-text'>
+              <p>Judi has owned and operated Skyline Ranch Equestrian Center for 20 years. She has over 35 years' experience teaching beginner through advanced riding lessons and bringing horses through the levels in eventing, jumpers, and dressage. Judi's lessons focus on developing confident and effective riders through challenging exercises, insightful feedback, and great positivity. Her students compete successfully at local and rated hunter/jumper shows, 3-day events, and dressage shows.</p>
+              <p>Some of Judi's accomplishments include:</p>
+              <ul>
+                <li>USDF Silver and Bronze medalist (Prix St. Georges level)</li>
+                <li>Evented through the Preliminary level</li>
+                <li>Shown jumpers through 1.35m mini-prix</li>
+                <li>Trained with Tracey Lert, Gerhardt Politz, Charles DeKunffy, Tom Poulin, Inez Propfe-Credo, Dale Peterson, Derek DiGrazia, and John McConnell</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class='row'>
+          <div class='col-md-8 instructor-bio'>
+            <h2>Angelica Adelman</h2>
+            <div class='instructor-bio-text'>
+              <p>Gelli grew up in Southern California, riding hunter/jumpers on the AA circuit. She's shown at major venues including San Diego's Showpark, The Oaks, LA Equestrian Center, Menlo Charity Show, and Pebble Beach. Now, she's been teaching lessons and running summer camp at Skyline Ranch since 2014. Her favorite thing about Skyline is the great community, and being able to watch kids learn and fall in love with horses and the sport.</p>
+            </div>
+          </div>
+          <div class='col-md-4'>
+            <img class='instructor-photo pull-right' src='https://placekitten.com/g/300/372'>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class='row'>
+          <div class='col-md-4 instructor-photo'>
+            <img class='instructor-photo pull-left' src="{{url_for('static', filename='img/kenny_bio.jpg')}}">
+          </div>
+          <div class='col-md-8 instructor-bio'>
+            <h2>Kenny Fraser</h2>
+            <div class='instructor-bio-text'>
+              <p>Kenny’s formal training started during his childhood in Hawaii with hunt seat equitation and cross country jumping. At the age of 12, his first horse was a nine-month-old thoroughbred filly who taught him the fundamentals of true horsemanship, a lot about himself, and ultimately how fulfilling this sport is.</p>
+              <p>Kenny has put those lessons to good use by providing instruction in show jumping, dressage, and pleasure riding. To each discipline he brings a focus on creating biomechanically sound, dynamic riding styles. Comprehensive horse management, affection, nutrition, healing, advocacy and safety are key elements of Kenny’s teaching He teaches many different levels of riders and schools, trains, and manages privately owned horses as well.</p>
+              <p>Whenever he’s not teaching, which isn’t often, he can usually be found with his magnificent mare The Tempest.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class='row'>
+          <div class='col-md-8 instructor-bio'>
+            <h2>Madelyn Reaves</h2>
+            <div class='instructor-bio-text'>
+              <p>Madelyn is a veteran of Skyline Ranch, having ridden here for 20 years and taught lessons for 10 years. She's a C3 graduate of Pony Club and has experience eventing through the Training level and showing dressage through First level. Madelyn is an equine vet tech and has vast knowledge of horse care and management. Her methodical teaching style helps riders become capable and well-rounded.</p>
+            </div>
+          </div>
+          <div class='col-md-4'>
+            <img class='instructor-photo pull-right' src="{{url_for('static', filename='img/madelyn_bio.jpg')}}">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
