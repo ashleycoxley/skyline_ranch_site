@@ -46,11 +46,15 @@
 
 }
 
+.section-pictures {
+	margin-top: 24px;
+}
+
 /*Instructor page*/
 
 .instructor-photo {
-	height: 380px;
-	width: auto;
+	max-height: 380px;
+	max-width: 100%;
 }
 
 .instructor-bio {
@@ -60,6 +64,7 @@
 
 .panel-body {
 	padding: 34px;
+	min-height: 440px;
 }
 
 

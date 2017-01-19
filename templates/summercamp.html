@@ -1,0 +1,53 @@
+{% extends "header.html" %}
+{% block content %}
+<div class='container'>
+  <div class='row'>
+    <div class='col-md-5 section-pictures'>
+      <div id="camp-carousel" class="carousel slide section-pictures" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#camp-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#camp-carousel" data-slide-to="1"></li>
+          <li data-target="#camp-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="https://placekitten.com/g/400/500" alt="img 1">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <img src="https://placekitten.com/g/400/499" alt="...">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <img src="https://placekitten.com/g/400/498" alt="...">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#camp-carousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#camp-carousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class='col-md-7'>
+      <h2>Summer Camp</h2>
+      <p>Skyline Ranch offers summer camp for kids ages 6 to 15 years. Located in the Oakland Hills, on property owned by the East Bay Regional Parks, Skyline Ranch is a historic center of the Northern California horse community. As home of the Redwood Hills Pony Club, we have years of experience in giving children a solid foundation in horse riding and care, while encouraging safe and confidence-building fun at the barn.</p>
+      <p>We accept a small group of kids each session for a week of fun and horseback riding at our facility. Each day, your child will not only take riding lessons designed to give her or him a solid basis in English riding, but also have the fun of learning to groom, feed, lead, bathe and care for a horse, as well as play games, work on art projects, and make new friends.</p>
+      <p>With our summer camp as a foundation, your child will be ready to continue on with riding lessons in the fall, or return to camp next year with a strong skill set. Not to mention confidence and sense of accomplishment that time with horses builds – exactly what you want from your child’s summer experience.</p>
+      <p><b>Check back soon for 2017 dates and signup information!</b></p>
+    </div>
+  </div>
+</div>
+{% endblock %}

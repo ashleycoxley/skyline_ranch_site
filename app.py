@@ -30,6 +30,16 @@ def instructors_page():
     return flask.render_template('instructors.html')
 
 
+@app.route('/summercamp')
+def camp_page():
+    return flask.render_template('summercamp.html')
+
+
+@app.route('/photos')
+def photos_page():
+    return flask.render_template('photos.html')
+
+
 @app.route('/contact', methods=['GET'])
 def contact_page():
     return flask.render_template('contact.html')
