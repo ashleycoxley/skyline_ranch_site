@@ -5,39 +5,41 @@
     <div id="skyline-carousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#skyline-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#skyline-carousel" data-slide-to="1"></li>
-        <li data-target="#skyline-carousel" data-slide-to="2"></li>
+        {% for item in content: %}
+          {% if loop.index0 == 0 %}
+        <li data-target="#skyline-carousel" data-slide-to="{{loop.index0}}" class="active"></li>
+          {% else %}
+        <li data-target="#skyline-carousel" data-slide-to="{{loop.index0}}"></li>
+          {% endif %}
+          {% endfor %}
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
+        {% for item in content: %}
+          {% if loop.index == 1 %}
         <div class="item active">
-          <img src="https://placekitten.com/g/1000/470" alt="img 1">
-          <div class="carousel-caption">
-          </div>
+          <img src="static/img/home/{{item['img']}}" alt="img 1">
+          <a href="{{item.link}}">
+            <div class="carousel-caption {{item.align}}">
+              <p>{{item.info | safe}}</p>
+              <p class='learn-more'>LEARN MORE >></p>
+            </div>
+          </a>
         </div>
+          {% else %}
         <div class="item">
-          <img src="https://placekitten.com/g/1000/469" alt="...">
-          <div class="carousel-caption">
-          </div>
+          <img src="static/img/home/{{item['img']}}" alt="...">
+          <a href="{{item.link}}">
+            <div class="carousel-caption {{item.align}}">
+              <p>{{item.info | safe}}</p>
+              <p class='learn-more'>LEARN MORE >></p>
+            </div>
+          </a>
         </div>
-        <div class="item">
-          <img src="https://placekitten.com/g/1000/472" alt="...">
-          <div class="carousel-caption">
-          </div>
-        </div>
+          {% endif %}
+        {% endfor %}
       </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#skyline-carousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#skyline-carousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
   </div>
 </div>

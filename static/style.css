@@ -61,6 +61,55 @@
   margin-top: 24px;
 }
 
+/* Image carousels */
+#skyline-carousel .item {
+  height: 460px;
+}
+
+.item img {
+  height: 100%;
+}
+
+.carousel-caption {
+  background-color: rgba(50, 50, 50, 0.6);
+  top: 0;
+  bottom: 0;
+  width: 32%;
+}
+
+.carousel-caption p {
+  font-size: 26pt;
+  color: #f7f7ef;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 100;
+}
+
+.carousel-caption.left {
+  left: 0;
+  right: auto;
+}
+
+.carousel-caption.right {
+  left: auto;
+  right: 0;
+}
+
+.carousel-inner a {
+  text-decoration: none;
+}
+
+.learn-more {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+em {
+  font-size: 36pt;
+  font-weight: 200;
+}
+
 /*Instructor page*/
 
 .instructor-photo {
@@ -78,6 +127,10 @@
   min-height: 440px;
 }
 
+.contact-img {
+  padding-top: 12px;
+  width: 100%;
+}
 
 @media screen and (max-width: 1120px) {
   .navbar-nav {

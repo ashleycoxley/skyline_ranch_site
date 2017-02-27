@@ -1,0 +1,28 @@
+{"carousel-content": 
+	[
+		{
+			"img": "lessons.jpg",
+		 	"info": "Skyline Ranch offers <em>riding lessons</em> for all ages and all experience levels",
+		 	"link": "/lessons",
+		 	"align": "left"
+		 },
+		{
+			"img": "crossties.jpeg",
+		 	"info": "Board your horse with us and</p><p><em>join the family</em>",
+		 	"link": "/boarding",
+		 	"align": "left"
+		 },
+		{
+			"img": "danielle.jpg",
+		 	"info": "Our training programs develop both horse and rider to be </p><p><em>strong and confident</em>",
+		 	"link": "/training",
+		 	"align": "right"
+		},
+		{
+			"img": "show.jpeg",
+		 	"info": "Join us at</p><p><em>horse shows</em> all around California",
+		 	"link": "/shows",
+		 	"align": "right"
+		}
+	]
+}
