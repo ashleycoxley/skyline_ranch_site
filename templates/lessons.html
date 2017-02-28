@@ -6,48 +6,42 @@
 			<div id="lesson-carousel" class="carousel slide section-pictures" data-ride="carousel">
       	<!-- Indicators -->
       	<ol class="carousel-indicators">
-      	  <li data-target="#lesson-carousel" data-slide-to="0" class="active"></li>
-      	  <li data-target="#lesson-carousel" data-slide-to="1"></li>
-      	  <li data-target="#lesson-carousel" data-slide-to="2"></li>
+          {% for filename in files: %}
+            {% if loop.index0 == 0 %}
+      	  <li data-target="#lesson-carousel" data-slide-to="{{loop.index0}}" class="active"></li>
+            {% else %}
+      	  <li data-target="#lesson-carousel" data-slide-to="{{loop.index0}}"></li>
+            {% endif %}
+          {% endfor %}
       	</ol>
 
       	<!-- Wrapper for slides -->
       	<div class="carousel-inner" role="listbox">
+          {% for filename in files: %}
+            {% if loop.index0 == 0 %}
       	  <div class="item active">
-      	    <img src="https://placekitten.com/g/400/500" alt="img 1">
-      	    <div class="carousel-caption">
-      	    </div>
+      	    <img src="/static/img/lessons/{{filename}}" alt="img 1">
       	  </div>
+            {% else %}
       	  <div class="item">
-      	    <img src="https://placekitten.com/g/400/499" alt="...">
-      	    <div class="carousel-caption">
-      	    </div>
+      	    <img src="/static/img/lessons/{{filename}}" alt="...">
       	  </div>
-      	  <div class="item">
-      	    <img src="https://placekitten.com/g/400/498" alt="...">
-      	    <div class="carousel-caption">
-      	    </div>
-      	  </div>
+            {% endif %}
+          {% endfor %}
       	</div>
-
-      	<!-- Controls -->
-      	<a class="left carousel-control" href="#lesson-carousel" role="button" data-slide="prev">
-      	  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      	  <span class="sr-only">Previous</span>
-      	</a>
-      	<a class="right carousel-control" href="#lesson-carousel" role="button" data-slide="next">
-      	  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      	  <span class="sr-only">Next</span>
-      	</a>
     	</div>
+      <p class='action-text'>Interested in setting up a lesson? <a href='/contact'>Send us a message!</a></p>
 		</div>
-		<div class='col-md-7'>
-      <h2>Riding Lessons</h2>
-			<p>Skyline Ranch offers riding lessons for all ages and all levels of experience. Our safe and well-educated horses have lots to teach our students. Whether you're just beginning riding, starting over after many years, or have competitive goals, our highly qualified instructors can help you reach your goals. We teach balance seat English lessons, typically leading to either jumping, dressage, or both.</p>
+		<div class='col-md-7 info-section'>
+      <h2>Riding Lessons and Training</h2>
+			<p>Skyline Ranch offers riding lessons and training for all ages and levels of experience. Whether you're just beginning riding, starting over after many years, or have competitive goals, our highly qualified trainers can help you reach your goals. We teach balanced seat English lessons, typically leading to either jumping, dressage, or both. For those without a horse, we have many safe and well-educated school horses.</p>
 			<h4>Beginners</h4>
 			<p>Beginning riders take private lessons until they are safe, confident, and capable with horses. First lessons teach grooming and tacking in addition to riding. Once a rider has good control and confidence in the saddle, and can get their lesson horse ready on their own, they are ready to join a semi-private or group lesson.</p>
 			<h4>Advanced Riders</h4>
-			<p>Riders capable of riding confidently in a group are welcome to join advanced group lessons, offered several times a week. Lessons focus on jumping, dressage, and rider fitness.</p>
+			<p>Riders capable of riding confidently in a group are welcome to join advanced group lessons, offered several times a week. Lessons focus on jumping, dressage, and rider fitness. Skyline Ranch hosts jumping and dressage clinics regularly and travels to horse shows. For more information about clinics and shows, check </p>
+      <h4>Training</h4>
+      <p>Training is also available for your horse under the care of Judi or one of our other trainers. Our training programs are centered around the ultimate goal of empowering <b>you</b> to achieve your goals. Whether you want to compete or just to feel more confident and effective riding your horse, we can help you get there.</p>
+      <p><i><b>Note:</b> Skyline does not offer guided trail rides or horse rentals.</i></p>
 			<table class="table">
   			<thead>
   			  <tr>

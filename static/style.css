@@ -42,12 +42,6 @@
   margin-top: 20px;
 }
 
-.boarding-banner {
-  margin-top: 30px;
-  width: 70%;
-  height: auto;
-}
-
 .thumbnail-box {
   margin-top: 15px;
 }
@@ -66,7 +60,7 @@
   height: 460px;
 }
 
-.item img {
+#skyline-carousel .item img {
   height: 100%;
 }
 
@@ -109,6 +103,54 @@ em {
   font-size: 36pt;
   font-weight: 200;
 }
+
+.info-section {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+
+#lesson-carousel .item {
+  height: 510px;
+}
+
+#camp-carousel .item {
+  height: 510px;
+}
+
+#camp-carousel .item img {
+  height: 100%;
+}
+
+#show-carousel {
+  padding-top: 30px;
+}
+
+#show-carousel .item {
+  height: 490px;
+}
+
+#show-carousel .item img {
+  height: 100%;
+  width: auto;
+  max-width: none;
+}
+
+.piedmont img {
+  max-width: 100%;
+  
+}
+
+
+
+
+
+.action-text {
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 
 /*Instructor page*/
 

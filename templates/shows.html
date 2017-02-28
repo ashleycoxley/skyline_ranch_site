@@ -1,0 +1,53 @@
+{% extends "header.html" %}
+{% block content %}
+<div class='container'>
+	<div class='row'>
+		<div class='col-md-5 info-section'>
+      <h2>Horse Shows and Clinics</h2>
+      <p>At Skyline Ranch, we participate in a full schedule of activities, both at home and on the road. We encourage interested riders to try a variety of activities in order to build their skills and experience, and have fun doing it!</p>
+      <h4>Horse Shows</h4>
+      <p>We compete at horse shows all around Northern California in hunter/jumpers, eventing, and dressage - from the local to the recognized level. Our schedule changes depending on interest, but you can usually find us at the following venues:</p>
+      <ul>
+        <li>MHA Shows (Sequoia Arena)</li>
+        <li>Woodside Horse Park</li>
+        <li>Rancho Murieta Equestrian Center</li>
+        <li>Fresno County Horse Park</li>
+      </ul>
+      <br>
+      <h4>Clinics</h4>
+      <p>We host monthly dressage clinics with Tracey Lert at Skyline. Serious dressage rider or not - everyone benefits from Tracey's keen eye and depth of knowledge and experience.<p/>
+      <p>We also host a regular schedule of rotating jumping clinicians, travel to local clinics, and go cross country schooling at nearby courses.</p>
+		</div>
+        <div class='col-md-7'>
+      <div id="show-carousel" class="carousel slide section-pictures" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          {% for filename in files: %}
+            {% if loop.index0 == 0 %}
+          <li data-target="#show-carousel" data-slide-to="{{loop.index0}}" class="active"></li>
+            {% else %}
+          <li data-target="#show-carousel" data-slide-to="{{loop.index0}}"></li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          {% for filename in files: %}
+            {% if loop.index0 == 0 %}
+          <div class="item active">
+            <img src="/static/img/shows/{{filename}}" alt="img 1">
+          </div>
+            {% else %}
+          <div class="item">
+            <img src="/static/img/shows/{{filename}}" alt="...">
+          </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+	</div>
+</div>
+
+{% endblock %}
