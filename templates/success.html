@@ -1,0 +1,14 @@
+{% extends "header.html" %}
+{% block content %}
+<div class='container'>
+  <div class='row'>
+    <div class='col-sm-6'>
+      <h2>Contact Us</h2>
+      <p>Your message has been sent. You should receive a confirmation message shortly. Thanks for your interest!</p>
+    </div>
+    <div class='col-sm-6'>
+      <img src="{{url_for('static', filename='img/roamin.png')}}" class="contact-img img-thumbnail">
+    </div>
+  </div>
+</div>
+{% endblock %}

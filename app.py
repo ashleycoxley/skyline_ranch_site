@@ -73,11 +73,12 @@ def contact_page():
 
     elif flask.request.method == 'POST':
         if form.validate_on_submit():
+            subject = form.subject.data
             sender_name = form.name.data
             sender_email = form.email.data
-            subject = form.subject.data
             message = form.message.data
-            return flask.redirect('/')
+            contact_form.send_emails(subject, sender_name, sender_email, message)
+            return flask.render_template('success.html')
         return flask.render_template('contact.html', form=form)
 
 
